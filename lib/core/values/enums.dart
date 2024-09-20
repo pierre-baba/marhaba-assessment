@@ -1,0 +1,1 @@
+enum ApiMethod { post, get, delete, put }

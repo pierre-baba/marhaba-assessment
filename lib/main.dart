@@ -14,11 +14,11 @@ import 'package:marhaba_auctions_assessment/translation/translations.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // HttpOverrides.global = MyHttpOverrides();
-
+  await ScreenUtil.ensureScreenSize();
 
   await DefaultSettings.initStorage();
-  var lang = await DefaultSettings.language;
-  var theme = await DefaultSettings.theme;
+  var lang = DefaultSettings.language;
+  var theme = DefaultSettings.theme;
 
 
   runApp(
